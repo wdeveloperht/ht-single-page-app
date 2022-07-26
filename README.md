@@ -4,8 +4,8 @@ A small project developed for uni, based on a list of requirements.
 -------------------------
 This is the demo access.
 
-user name: 		admin
+login: 		    admin
 password: 		123
 
-user name: 		user
+login: 		    user
 password: 		321
