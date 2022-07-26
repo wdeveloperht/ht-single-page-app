@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+<body>
+
+<div id="ht-login">
+    <h1>Sign in</h1>
+    <input class="form-group" id="userName" name="username" type="text" placeholder="Fill in username">
+    <input class="form-group" id="userPassword" name="password" type="password" placeholder="Fill in password">
+    <input class="btn btn-primary center-block form-group" id="btn-login" type="submit" value="Log in">
+    <div id="login-error-msg" class="error-msg"></div>
+</div>
+
+<div id="ht-dashboard">
+    <nav class="navbar navbar-inverse">
+        <h1>Dashboard</h1>
+        <div id="navbar-right">
+            <span id="welcome-msg"></span>
+            <input id="btn-logout" type="submit" value="[Logout]">
+        </div>
+    </nav>
+    <div class="ht-body">
+        <h3>Exam result</h3>
+        <p>Your score is <b><span class="ht-score">{{score}}</span> of 10</b></p>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="assets/scripts/app.js"></script>
+</body>
+</html>
